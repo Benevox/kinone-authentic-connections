@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import KinOneLogo from "@/components/KinOneLogo";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import heroImage from "@/assets/hero-connections.jpg";
 import {
   Heart,
@@ -69,6 +70,7 @@ const Index = () => {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <KinOneLogo />
           <div className="flex items-center gap-4">
+            <ThemeToggle />
             <Link to="/onboarding">
               <Button variant="ghost">Sign In</Button>
             </Link>
