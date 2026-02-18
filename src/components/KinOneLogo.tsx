@@ -12,7 +12,7 @@ const KinOneLogo = ({ className = "" }: { className?: string }) => {
         </div>
       </div>
       <span className="text-2xl font-bold text-foreground">
-        Kin<span className="text-coral">One</span>
+        Da<span className="text-coral">mosco</span>
       </span>
     </Link>
   );

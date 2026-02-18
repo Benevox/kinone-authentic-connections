@@ -45,10 +45,10 @@ const passionCategories = [
 const connectionIntents = [
   { id: "study-buddy", label: "Study Buddy", description: "Someone to learn and grow with" },
   { id: "workout-partner", label: "Workout Partner", description: "Stay motivated together" },
-  { id: "creative-collab", label: "Creative Collaborator", description: "Build something amazing" },
-  { id: "mental-health", label: "Mental Wellness Support", description: "Share and listen" },
+  { id: "creative-collab", label: "Creative Collaborator", description: "Build something incredible" },
+  { id: "mental-health", label: "Mental Wellness Support", description: "Share, listen, and heal" },
   { id: "hobby-group", label: "Hobby Group", description: "Join local enthusiasts" },
-  { id: "new-friends", label: "New Friendships", description: "Genuine connections" },
+  { id: "new-friends", label: "New Friendships", description: "Deep, lasting connections" },
 ];
 
 const OnboardingFlow = () => {
@@ -133,10 +133,10 @@ const OnboardingFlow = () => {
                   <span className="text-sm font-medium">Step 1 of 4</span>
                 </div>
                 <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
-                  What lights you up?
+                  What truly lights you up?
                 </h1>
                 <p className="text-muted-foreground text-lg">
-                  Select at least 3 passions that define you. These help us find your Kin.
+                  Pick at least 3 passions. These form the heart of every connection Damosco makes for you.
                 </p>
               </div>
 
@@ -195,10 +195,10 @@ const OnboardingFlow = () => {
                   <span className="text-sm font-medium">Step 2 of 4</span>
                 </div>
                 <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
-                  Share your true self
+                  Show us who you really are
                 </h1>
                 <p className="text-muted-foreground text-lg">
-                  What makes you uniquely you? Be authentic — there's no wrong answer.
+                  No filters, no highlights reel. Just you — and that's exactly what we need.
                 </p>
               </div>
 
@@ -212,7 +212,7 @@ const OnboardingFlow = () => {
                     <textarea
                       value={aboutMe}
                       onChange={(e) => setAboutMe(e.target.value)}
-                      placeholder="I'm passionate about... I love spending my time... What excites me most is..."
+                      placeholder="I'm passionate about... My weirdest hobby is... What I'm really looking for is..."
                       className="w-full h-40 rounded-xl border-2 border-border bg-card px-4 py-3 text-base placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 resize-none"
                     />
                     <p className="text-sm text-muted-foreground mt-2">
@@ -222,7 +222,7 @@ const OnboardingFlow = () => {
 
                   <div className="p-4 rounded-xl bg-marigold/10 border border-marigold/20">
                     <p className="text-sm text-marigold-dark">
-                      <strong>Tip:</strong> Share what you're passionate about, your quirks, dreams, or what kind of connection you're looking for. Authenticity creates the best connections!
+                      <strong>Tip:</strong> The more real you are here, the better your matches will be. Mention your quirks, your dreams, even your current struggles — Damosco celebrates authenticity.
                     </p>
                   </div>
                 </div>
@@ -239,10 +239,10 @@ const OnboardingFlow = () => {
                   <span className="text-sm font-medium">Step 3 of 4</span>
                 </div>
                 <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
-                  What are you seeking?
+                  What are you looking for?
                 </h1>
                 <p className="text-muted-foreground text-lg">
-                  Select what kinds of connections would enrich your life right now.
+                  Choose the kinds of connection that would make your life richer right now.
                 </p>
               </div>
 
@@ -289,10 +289,10 @@ const OnboardingFlow = () => {
                   <span className="text-sm font-medium">Step 4 of 4</span>
                 </div>
                 <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
-                  Where are you based?
+                  Where are you in the world?
                 </h1>
                 <p className="text-muted-foreground text-lg">
-                  Help us find Kin near you for real-world meetups and connections.
+                  Help us find people near you — because the best connections happen in person too.
                 </p>
               </div>
 
@@ -305,7 +305,7 @@ const OnboardingFlow = () => {
                     <Input
                       value={location}
                       onChange={(e) => setLocation(e.target.value)}
-                      placeholder="e.g., San Francisco, CA"
+                      placeholder="e.g., Lisbon, Portugal"
                     />
                   </div>
 
@@ -329,7 +329,7 @@ const OnboardingFlow = () => {
 
                   <div className="p-4 rounded-xl bg-sage/30 border border-sage-dark/10">
                     <p className="text-sm text-sage-dark">
-                      <strong>Privacy Note:</strong> Your exact location is never shared. We only use this to suggest nearby Kin and events.
+                      <strong>Privacy Note:</strong> Your exact location is never shared. We only use this to suggest nearby people and events.
                     </p>
                   </div>
                 </div>
@@ -359,7 +359,7 @@ const OnboardingFlow = () => {
               onClick={handleNext}
               disabled={!canProceed()}
             >
-              {step === totalSteps ? "Find My Kin" : "Continue"}
+              {step === totalSteps ? "Find My People" : "Continue"}
               <ChevronRight className="w-4 h-4 ml-1" />
             </Button>
           </div>

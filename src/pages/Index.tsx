@@ -20,43 +20,43 @@ import {
 const features = [
   {
     icon: Brain,
-    title: "Deep Alignment",
-    description: "Our algorithm matches based on shared values, passions, and connection goals — not just surface interests.",
+    title: "Passion Matching",
+    description: "Our algorithm finds people aligned with your values and interests — not just surface-level hobbies.",
     color: "coral",
   },
   {
     icon: Users,
-    title: "Real Connections",
-    description: "Foster genuine friendships built on authenticity. No pressure, no games, just real people.",
+    title: "Genuine Bonds",
+    description: "No performance, no pressure. Damosco is built for people who crave real, lasting friendships.",
     color: "marigold",
   },
   {
     icon: Calendar,
-    title: "Local Meetups",
-    description: "Discover events and gatherings in your area. Turn online connections into real-world friendships.",
+    title: "Real-World Meetups",
+    description: "Go beyond the screen. Discover local events and gatherings shaped around your shared passions.",
     color: "lavender",
   },
   {
     icon: Shield,
-    title: "Safe Space",
-    description: "A judgment-free zone designed with mental wellness in mind. Your comfort is our priority.",
+    title: "Wellness First",
+    description: "A judgment-free space designed with mental health in mind. Your comfort and safety always come first.",
     color: "sage",
   },
 ];
 
 const testimonials = [
   {
-    quote: "KinOne helped me find my art collective. We meet every week now and it's changed my life.",
+    quote: "Damosco helped me find a photography collective I didn't know I needed. We shoot together every weekend now.",
     author: "Maya, 27",
-    passion: "Creative Arts",
+    passion: "Photography",
   },
   {
-    quote: "After moving to a new city, I felt so isolated. Now I have a hiking group that feels like family.",
+    quote: "I moved to a new city and felt invisible. Within two weeks on Damosco, I had a hiking crew that felt like home.",
     author: "Jordan, 32",
     passion: "Nature",
   },
   {
-    quote: "Finally, an app that understands what real connection means. No swiping, just genuine people.",
+    quote: "Finally an app that values depth over followers. I've made two of my closest friends here.",
     author: "Alex, 29",
     passion: "Mindfulness",
   },
@@ -95,21 +95,21 @@ const Index = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-coral/10 border border-coral/20">
                 <Sparkles className="w-4 h-4 text-coral" />
                 <span className="text-sm font-medium text-coral-dark">
-                  Combating isolation, one connection at a time
+                  Fighting loneliness, one real connection at a time
                 </span>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Connecting Minds,
+                Where Real
                 <br />
                 <span className="gradient-warm bg-clip-text text-transparent">
-                  Uplifting Spirits
+                  Connections Begin
                 </span>
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground max-w-lg">
-                Find your Kin — people who share your passions and understand your journey. 
-                Build genuine friendships that flourish both online and in the real world.
+                Find your people — those who truly share your passions and understand your world. 
+                Build friendships that go beyond the screen and into real life.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -143,7 +143,7 @@ const Index = () => {
                 </div>
                 <div className="text-sm">
                   <p className="font-semibold text-foreground">Join 50,000+ members</p>
-                  <p className="text-muted-foreground">finding their Kin daily</p>
+                  <p className="text-muted-foreground">finding real connections daily</p>
                 </div>
               </div>
             </div>
@@ -169,8 +169,8 @@ const Index = () => {
                     <Heart className="w-5 h-5 text-coral" />
                   </div>
                   <div>
-                    <p className="font-semibold text-sm">89% Match</p>
-                    <p className="text-xs text-muted-foreground">Sarah shares 4 passions</p>
+                    <p className="font-semibold text-sm">91% Match</p>
+                    <p className="text-xs text-muted-foreground">Sofia shares 5 passions</p>
                   </div>
                 </div>
               </Card>
@@ -185,8 +185,8 @@ const Index = () => {
                     <Calendar className="w-5 h-5 text-marigold" />
                   </div>
                   <div>
-                    <p className="font-semibold text-sm">Hiking Meetup</p>
-                    <p className="text-xs text-muted-foreground">Tomorrow, 5:30 PM</p>
+                    <p className="font-semibold text-sm">Rooftop Yoga</p>
+                    <p className="text-xs text-muted-foreground">Saturday, 8:00 AM</p>
                   </div>
                 </div>
               </Card>
@@ -200,14 +200,14 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <Badge variant="lavender" className="mb-4">
-              Why KinOne?
+              Why Damosco?
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Designed for Real Connections
+              Designed for Depth, Not Likes
             </h2>
             <p className="text-muted-foreground text-lg">
-              We built KinOne to be the antidote to superficial social media. 
-              Here, authenticity wins and genuine bonds flourish.
+              Damosco is the antidote to shallow social media. 
+              Here, authenticity wins and meaningful bonds are built to last.
             </p>
           </div>
 
@@ -243,16 +243,16 @@ const Index = () => {
               Simple & Intuitive
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Find Your Kin in 4 Steps
+              Find Your People in 4 Steps
             </h2>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {[
-              { step: "1", title: "Share Your Passions", desc: "Tell us what lights you up" },
-              { step: "2", title: "Be Yourself", desc: "Share your authentic story" },
-              { step: "3", title: "Get Matched", desc: "Our algorithm finds your Kin" },
-              { step: "4", title: "Connect & Meet", desc: "Build real friendships" },
+              { step: "1", title: "Share Your Passions", desc: "Tell us what truly lights you up" },
+              { step: "2", title: "Be Yourself", desc: "Express your authentic story" },
+              { step: "3", title: "Get Matched", desc: "Our algorithm finds your people" },
+              { step: "4", title: "Connect & Meet", desc: "Build friendships that last" },
             ].map((item, i) => (
               <div key={i} className="text-center">
                 <div className="w-16 h-16 rounded-full gradient-warm text-primary-foreground font-bold text-2xl flex items-center justify-center mx-auto mb-4 shadow-card">
@@ -274,7 +274,7 @@ const Index = () => {
               Real Stories
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Lives Changed by Connection
+              Lives Changed by Real Connection
             </h2>
           </div>
 
@@ -301,15 +301,15 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <Card variant="elevated" className="max-w-3xl mx-auto p-12 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Ready to Find Your Kin?
+              Ready to Find Your People?
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-lg mx-auto">
-              Join thousands who have found meaningful connections and overcome isolation. 
-              Your Kin are waiting.
+              Thousands have already found meaningful connections and broken free from isolation on Damosco. 
+              Your people are waiting.
             </p>
             <Link to="/onboarding">
               <Button variant="warm" size="xl">
-                Start Your Free Journey
+                Join Damosco Free
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>
@@ -323,7 +323,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <KinOneLogo />
             <p className="text-sm text-muted-foreground">
-              © 2024 KinOne. Built with 💛 to combat loneliness.
+              © 2024 Damosco. Built with 💛 to combat loneliness.
             </p>
             <div className="flex gap-6 text-sm text-muted-foreground">
               <a href="#" className="hover:text-foreground transition-colors">Privacy</a>

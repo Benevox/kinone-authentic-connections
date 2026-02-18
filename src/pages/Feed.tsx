@@ -23,21 +23,21 @@ import {
 const mockKins = [
   {
     id: 1,
-    name: "Sarah",
+    name: "Sofia",
     age: 28,
-    location: "San Francisco, CA",
-    bio: "Artist and plant mom who loves hiking on weekends. Always looking for creative souls to collaborate with!",
-    passions: ["Creative Arts", "Nature", "Photography", "Mindfulness", "Food"],
-    alignmentScore: 92,
+    location: "Barcelona, Spain",
+    bio: "Illustrator and urban explorer. I collect vintage maps and spend weekends sketching city corners nobody notices.",
+    passions: ["Creative Arts", "Nature", "Photography", "Mindfulness", "Travel"],
+    alignmentScore: 91,
     imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-    sharedPassions: ["Creative Arts", "Nature", "Photography"],
+    sharedPassions: ["Creative Arts", "Photography", "Travel"],
   },
   {
     id: 2,
     name: "Marcus",
     age: 31,
-    location: "Oakland, CA",
-    bio: "Software engineer by day, musician by night. Looking for jam session buddies and tech collaborators.",
+    location: "Lisbon, Portugal",
+    bio: "Sound engineer by trade, record collector by obsession. Looking for jam partners and late-night conversation.",
     passions: ["Music", "Technology", "Gaming", "Travel"],
     alignmentScore: 87,
     imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
@@ -47,8 +47,8 @@ const mockKins = [
     id: 3,
     name: "Aisha",
     age: 26,
-    location: "Berkeley, CA",
-    bio: "Mental health advocate and yoga instructor. I believe in genuine connections and meaningful conversations.",
+    location: "Porto, Portugal",
+    bio: "Mental wellness advocate and morning yoga devotee. I believe the best conversations happen over tea.",
     passions: ["Mindfulness", "Fitness", "Reading", "Social Causes"],
     alignmentScore: 85,
     imageUrl: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop",
@@ -56,10 +56,10 @@ const mockKins = [
   },
   {
     id: 4,
-    name: "Jake",
+    name: "Leo",
     age: 29,
-    location: "San Jose, CA",
-    bio: "Chef and food blogger exploring cuisines from around the world. Let's cook together!",
+    location: "Madrid, Spain",
+    bio: "Chef-in-training and fermentation nerd. Let's cook something weird together and talk about it for hours.",
     passions: ["Food", "Travel", "Photography", "Nature"],
     alignmentScore: 78,
     imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
@@ -70,17 +70,17 @@ const mockKins = [
 const upcomingMeetups = [
   {
     id: 1,
-    title: "Sunset Hiking Group",
-    date: "Tomorrow, 5:30 PM",
-    attendees: 12,
-    passion: "Nature",
+    title: "Golden Hour Photo Walk",
+    date: "Tomorrow, 6:00 PM",
+    attendees: 9,
+    passion: "Photography",
   },
   {
     id: 2,
-    title: "Art & Wine Night",
+    title: "Rooftop Vinyl Night",
     date: "Sat, Dec 14",
-    attendees: 8,
-    passion: "Creative Arts",
+    attendees: 14,
+    passion: "Music",
   },
 ];
 
@@ -119,7 +119,7 @@ const Feed = () => {
                 <Input
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search by passion, name, or location..."
+                  placeholder="Search by passion, name, or city..."
                   className="pl-12"
                 />
               </div>
@@ -132,11 +132,11 @@ const Feed = () => {
             <div className="flex items-center gap-4 text-sm">
               <div className="flex items-center gap-2 text-coral">
                 <Sparkles className="w-4 h-4" />
-                <span className="font-medium">24 new Kin matches</span>
+                <span className="font-medium">18 new matches for you</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="w-4 h-4" />
-                <span>Within 10 miles</span>
+                <span>Within 15 miles</span>
               </div>
             </div>
 
@@ -150,7 +150,7 @@ const Feed = () => {
             {/* Load More */}
             <div className="text-center pt-4">
               <Button variant="soft" size="lg">
-                Discover More Kin
+                Discover More People
               </Button>
             </div>
           </div>
